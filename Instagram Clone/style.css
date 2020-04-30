@@ -72,6 +72,12 @@ h1{
 a, a:visited, a:active{
     text-decoration: none;
 }
+li{
+    list-style-type: none;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.7rem;
+}
 input{
     width: 250px; 
     padding: 8px 7px;
@@ -214,6 +220,29 @@ input::placeholder{
     margin: 8px;
 }
 
+/* ============== */
+/* FOOTER  */
+/* ================ */
+
+.footer{
+    margin: 40px 0;
+    justify-content: space-around;
+}
+.norm{
+    flex-wrap: wrap;
+}
+.norm li{
+    margin: 0 6px;
+    color: #00376B;
+}
+.copy{
+    
+}
+.copy li{
+    color: #8E8E8E;
+}
+
+
 /* ================================ */
 /* SLIDESHOW IMAGES PHONE */
 /* ================================= */
@@ -252,8 +281,11 @@ input::placeholder{
 /* ================================ */
 /* RESPONSIVE*/
 /* ================================= */
-@media only screen and (max-width:900px){
+@media only screen and (max-width:1000px){
     .phone{
         display: none;
+    }
+    .footer{
+        display: block;
     }
 }
